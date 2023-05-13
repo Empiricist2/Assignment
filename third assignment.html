@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Third assignment</title>
+    <link rel="stylesheet" href="noob.css">
+</head>
+<body>
+        using copios examples explain the similarities and differences between the var,let
+        and const keywords in javascript 
+        <p>
+    1. const
+    const used for declaring variable, which cannot be reassigned to a new value.
+     introduced in ES6. example<br/>
+     const PI=3.14;<br/>
+     in this example, PI is a constant variable with a value of 3.14. if you try to ressign 
+     PI, you will get an error: pi=3.14159://Uncaught TypeError:Assignment to constant variable.<br/>
+
+2. var is used to declare a vaiable with function scope or global scope depending
+   on where it is declared. Example
+     var x= 10;
+     console.log(x):// Output:10
+     <br/>
+     x =20
+     console.log(x):// Output:20
+     in this example X is a variable declared with var that can be reassigned to a
+     new value.<br/>
+3. let 
+   let is used to declare a block-scoped variable.which can be reassignedto a new 
+   value within the same block.Here's an example:
+   <br/>
+   let x=10;
+   if(true){
+       let x =20
+       console.log(x):// Output:20
+   }
+  console.log(x):// Output:10<br/>
+  in this example x is a variable declared with let thatbhas a block scope. The console
+  log(x) inside the if statement outputs 20 because it is referencing the x declared
+  within the same block. The console.log(x) outside the if statement outputs 10 because 
+  it is referencing the x declared outside the block.<br/>
+</p>
+</body>
+</html>
+ 
